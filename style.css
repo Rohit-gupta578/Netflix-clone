@@ -1,52 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: "Martel Sans","Helvetica Neue",Segoe UI,sans-serif;
+
+body {
+    font-family: "Martel Sans", "Helvetica Neue", Segoe UI, sans-serif;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80vw;
+    max-width: 72vw;
     margin: auto;
-    height: 100px;
+    height: 62px;
     position: relative;
 }
-nav img{
+
+nav img {
     position: relative;
     color: red;
     z-index: 10;
+    margin-top: 6px;
 }
-button{
 
-    text-decoration: none;
+.btn-side {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.btn {
     color: white;
     position: relative;
     z-index: 10;
-
+    background-color: black;
+    opacity: 0.8;
+    padding: 8px 15px;
+    border-radius: 6px;
+    border-radius: 5px solid white;
 }
-.main{
+
+.red-btn {
+    background-color: red;
+    border-radius: 5px solid black;
+}
+
+.main {
     background-image: url("assets/imge/bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1200px,100vw);
-    height: 85vh;
+    background-size: max(2200px, 100vw);
+    height: 110vh;
     position: relative;
+    overflow: hidden;
 }
-.main .box{
-    height: 85vh;
+
+.main .box {
+    height: 110vh;
     width: 100%;
     background-color: black;
-    opacity: 0.58;
+    opacity: 0.67;
     position: absolute;
     top: 0;
-    display: flex;
-    flex-direction: column;
 }
-.hero{
-    height: 100%;
+
+.hero {
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,8 +74,42 @@ button{
     position: relative;
     z-index: 10;
     color: white;
+    gap: 1px;
+    padding-bottom: 25px;
+
 }
-.heroheader{
-    font-size: 45px;
+
+.heroheader {
+    display: inline;
+    font-size: 40px;
     font-weight: bolder;
+    text-align: center;
+}
+
+.heroSheader {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.sepration {
+    margin-top: 30px;
+    width: 100%;
+    /* Line ki width aap apne mutabiq set kar sakte hain */
+    height: 16px;
+    /* Line ki motai (thickness) */
+    background-color: #e80a0a;
+    /* Netflix ka dark rich red color */
+    /* Halkasa parabolic (curve/arch) effect dene ke liye */
+    border-radius: 200% 200% 0 0 / 200% 200% 0 0;
+    /* Agar aapko pure element ko thoda aur bend ya curve karna ho toh transform use karein */
+    transform: perspective(500px) rotateX(30deg);
+    box-shadow: 0 8px 20px rgba(10, 33, 248, 0.852);
+    /* 3D depth ke liye shadow */
+    position: relative;
+    z-index: 10;
+}
+
+.btn2 {
+    padding: 10px 20px;
+    font-size: medium;
 }
