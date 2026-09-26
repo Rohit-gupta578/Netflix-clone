@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Martel Sans","Helvetica Neue",Segoe UI,sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    margin: auto;
+    height: 100px;
+    position: relative;
+}
+nav img{
+    position: relative;
+    color: red;
+    z-index: 10;
+}
+button{
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 10;
+
+}
+.main{
+    background-image: url("assets/imge/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    height: 85vh;
+    position: relative;
+}
+.main .box{
+    height: 85vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.58;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.hero{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    color: white;
+}
+.heroheader{
+    font-size: 45px;
+    font-weight: bolder;
+}
