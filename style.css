@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Martel Sans", "Helvetica Neue", Segoe UI, sans-serif;
+    background-color: black;
 }
 
 nav {
@@ -34,30 +36,30 @@ nav img {
     color: white;
     position: relative;
     z-index: 10;
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.244);
     padding: 8px 15px;
     border-radius: 6px;
-    border-radius: 5px solid white;
 }
 
 .red-btn {
     background-color: red;
     border-radius: 5px solid black;
+    font-weight: bold;
 }
 
 .main {
     background-image: url("assets/imge/bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(2200px, 100vw);
-    height: 110vh;
+    background-size: cover;
+    height: 100dvh;
     position: relative;
     overflow: hidden;
+    margin-bottom: 0;
 }
 
 .main .box {
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background-color: black;
     opacity: 0.67;
@@ -66,7 +68,7 @@ nav img {
 }
 
 .hero {
-    height: 80%;
+    height: 80dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,12 +78,13 @@ nav img {
     color: white;
     gap: 1px;
     padding-bottom: 25px;
+    text-align: center;
 
 }
 
 .heroheader {
     display: inline;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bolder;
     text-align: center;
 }
@@ -89,27 +92,136 @@ nav img {
 .heroSheader {
     font-size: large;
     font-weight: bolder;
+    text-align: center;
+}
+
+.btn2 {
+    padding: 8px 17px;
+    font-size: large;
+}
+
+.int-btn {
+    background-color: rgba(23, 23, 23, 0.486);
+    width: 340px;
+    padding: 10px 17px;
+    font-size: medium;
+    border: 0.2px solid rgba(246, 238, 238, 0.345);
+    border-radius: 3px;
+    color: white;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
 }
 
 .sepration {
-    margin-top: 30px;
     width: 100%;
     /* Line ki width aap apne mutabiq set kar sakte hain */
-    height: 16px;
+    height: 9px;
     /* Line ki motai (thickness) */
     background-color: #e80a0a;
     /* Netflix ka dark rich red color */
     /* Halkasa parabolic (curve/arch) effect dene ke liye */
-    border-radius: 200% 200% 0 0 / 200% 200% 0 0;
+    border-radius: 80% 80% 0 0 / 100% 100% 0 0;
     /* Agar aapko pure element ko thoda aur bend ya curve karna ho toh transform use karein */
-    transform: perspective(500px) rotateX(30deg);
-    box-shadow: 0 8px 20px rgba(10, 33, 248, 0.852);
+    transform: perspective(300px) rotateX(30deg);
+    box-shadow: 0 8px 20px rgba(10, 34, 248, 0.959);
     /* 3D depth ke liye shadow */
     position: relative;
     z-index: 10;
 }
 
-.btn2 {
-    padding: 10px 20px;
-    font-size: medium;
+.first {
+    background-color: black;
+    height: 45vh;
+    margin: 40px auto;
+    color: white;
+
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+    margin-top: 24px;
+    justify-content: space-around;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.no-img{
+ position: relative;
+ border-radius: 20px;
+    width: 230px;
+    height: 100%;
+}
+.no-img img {
+    border-radius: 20px;
+    width: 230px;
+    height: 230px;
+}
+
+.no-img span{
+    position: absolute;
+    bottom: -3px;
+    left:-22px;
+}
+.second{
+ padding-top: 30px;
+ height: 60dvh;
+}
+.flex2{
+    display: flex;
+    align-items: center;
+    gap:60px;
+    justify-content: center;
+}
+.Reason-card{
+    background:linear-gradient(149deg, #192247 0%, #210e17 96.86%); 
+    width:200px;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap:20px;
+}
+.Reason-text{
+    font-weight: 100;
+    font-size: smaller;
+    flex: 1;
+}
+.Reason-svg{
+    width: 100px;
+    height: auto;
+    padding-left: 80px;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    padding-top:55px ;
+    width: 100%;
+    height: 100dvh;
+    gap:10px;
+    justify-content: center;
+}
+.block{
+    background-color: rgb(45,45,45);
+    display: flex;
+    width: 70%;
+    height: 50px;
+    align-items: center;
+    padding: 35px 10px 35px 35px;
+    gap:300px;
+}
+.block-text{
+    font-size: larger;
+    width:60%;
+}
+.block-icon{
+    font-size: xxx-large;
+    font-weight: 200;
 }
